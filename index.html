@@ -2,7 +2,8 @@
 <html lang = "en">
 <head>
     <meta charset="utf-8">
-    <meta>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    
 <link rel = "stylesheet" href = "form.css"/>
   <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">   
     </head>
@@ -11,33 +12,31 @@
         <div class ="title">                
             <h1 title = "Form" align = "center">form for getting information  </h1><hr />
         </div>
-           <!-- <div id = "form">-->
+            <div id = "form">
+		   
     
     <form id = "submit" action = "#" method = "post">
         
-        <div id = "user_name">
+
       <label name = "firstName">  First Name :</label> 
-        <input type = "text" name = "firstName" placeholder = "Enter your first name !"required/><br />
-            </div>
-         <div id = "lastName"> 
+      <input type = "text" name = "firstName" placeholder = "Enter your first name !"required/><br /><hr />
+
+    
         <label name = "lastName">Last Name :</label> 
-        <input type = "text" name = "LastName"placeholder = "Enter your last name !"  required/><br />
-        </div>
+        <input type = "text" name = "LastName"placeholder = "Enter your last name !"  required/><br /><hr />
         
-        <div id = "Email">
+        
         <label name = "email">
-        E-Mail : <input type = "email" id = "mail" name="email" placeholder = "Enter your Email " required /><br /> </label>
-        </div>
-        
-        <div id = "conatct">
+        Your Mail : <input type = "email" id = "mail" name="email" placeholder = "Enter your Email " required /><br /> </label><hr />
+              
         <label id = "contact"> Cotact No : </label>
-        <input type = "conatact no" name ="contactno" placeholder = "Enter your contact No !" required />        
-        </div>
+        <input type = "conatact no" name ="contactno" placeholder = "Enter your contact No !" required /><hr />        
         
-        <button type = "submit">Submit</button>
+        
+        <button type = "submit" onClick= "alert('Thanks for submitting form! ');">Submit</button>
         </form>
                 
-    <!--</div>-->
+    </div>
         </div>
     </body>
     
