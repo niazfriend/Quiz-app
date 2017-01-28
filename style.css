@@ -1,0 +1,49 @@
+#start{
+
+    height:auto;
+    color:white;
+    background:black;
+    padding:10px;
+    font-weight:bold;
+    box-shadow:0px 0px 10px rgb(0,0,0);
+    border:none;
+    -webkit-transition: margin-top 1s;
+    -moz-transition:margin-top 1s;
+    transition: margin-top 1s;
+    margin-top:10px;
+}
+#start:hover{
+    margin-top:-10px;
+}
+
+#main_page.hide{
+    display:none;
+}
+#q1{
+   display:none;
+}
+#q1.visible{
+    display:block;
+
+}
+#q2{
+    display:none;
+}
+#q2.visible2{
+    display:block;
+}
+#q3{
+    display:none;
+}
+#q3.visible3{
+    display:block;
+}
+/* result section styling startin here */
+#progress{
+    display:none;
+}
+#progress.show_result{
+    display:block;
+}
+
+

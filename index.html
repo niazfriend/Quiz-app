@@ -1,44 +1,47 @@
 <!DOCTYPE html>
-<html lang = "en">
-<head>
-    <meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-    
-<link rel = "stylesheet" href = "form.css"/>
-  <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">   
-    </head>
-    <body>
-        <div id = "container" align = "center">
-        <div class ="title">                
-            <h1 title = "Form" align = "center">form for getting information  </h1><hr />
-        </div>
-            <div id = "form">
-		   
-    
-    <form id = "submit" action = "#" method = "post">
-        
-
-      <label name = "firstName">  First Name :</label> 
-      <input type = "text" name = "firstName" placeholder = "Enter your first name !"required/><br /><hr />
-
-    
-        <label name = "lastName">Last Name :</label> 
-        <input type = "text" name = "LastName"placeholder = "Enter your last name !"  required/><br /><hr />
-        
-        
-        <label name = "email">
-        Your Mail : <input type = "email" id = "mail" name="email" placeholder = "Enter your Email " required /><br /> </label><hr />
-              
-        <label id = "contact"> Cotact No : </label>
-        <input type = "conatact no" name ="contactno" placeholder = "Enter your contact No !" required /><hr />        
-        
-        
-        <button type = "submit" onClick= "alert('Thanks for submitting form! ');">Submit</button>
-        </form>
-                
-    </div>
-        </div>
-    </body>
-    
-    
+<html>
+   
+   <head>
+       <link rel = "stylesheet" href = "style.css"/>
+      <title>practice session</title>
+   </head>
+   
+   <body>
+       <div id = "main_page">
+       <h1 alig= "center">Main QuziApp</h1>
+           <br />
+           <srong align = "center"> this is the simple <em>Quiz App</em> which is making after some intersting fact watch by me!</srong><br />
+           <em>Click to start</em><br/>
+           <button id = "start">Start</button>
+       </div>
+       <div id = "q1">
+       <h1> who is the first prime minister of pakistan ?</h1>
+       <input  type = "radio" value = "liaquat ali khan" name = "q1_option"/>liaquat ali khan<br />
+        <input type = "radio" value = "sikandar mirza"name = "q1_option"/>sikandar mirza <br />
+        <input type = "radio" value = "Quaid e azam"  name = "q1_option"/>Quaid e azam <br />
+           <button id = "next">next</button>
+           <strong id ="not_checked"></strong>
+       </div>
+       <div id = "q2">
+       <h1> which is the capital of pakistan ?</h1>
+       <input type = "radio" value = "karachi" name = "q2_options"/>karachi<br />
+        <input type = "radio" value = "peshawar" name = "q2_options"/>peshawar<br />
+        <input type = "radio" value = "islamabad" name = "q2_options"/>islamaabd<br />
+           <button id = "next3">next</button></div>
+       <div id = "q3">
+       <h1> who is the current prime minister of pakistan?</h1>
+       <input type = "radio" value = "nawaz sharif" name = "q3_options"/>nawaz sharif<br />
+        <input type = "radio" value = "shahbaz sharif" name = "q3_options"/>shahbaz sharif<br />
+        <input type = "radio" value = "mamnoon hussain" name = "q3_options"/>mamnoon huss<br />
+           <button id = "result">result</button></div>
+       <div align = "center" id = "progress">
+       <h1> Here is Your Progress Result!</h1>
+           <strong id = "cor_ans">Cor AnsWere 3</strong><br />
+           <strong id = "percent">percentage 100%</strong><br/>
+           <strong id = "remarks">Exellent you are pro</strong>
+       </div>
+       
+      <script type="text/javascript" src = "script.js">
+       </script>
+   </body>
 </html>
