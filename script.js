@@ -13,7 +13,25 @@
           button.onclick = function() {
             main_page.className = "hide";
             question_one.className = "visible";
-        }
+              //[[[[[[[[[[[[run timing function]]]]]]]]]]]]  
+            var min = 1;
+            var sec = 30;
+              setInterval(function() {
+                  sec--;
+                  if(sec === 0){
+                      min--;}
+                  if(min === 0) {
+                      sec = 0;
+                      min = 0;
+                    main_page.className = "hide";
+                    question_one.className = "";
+                    question_two.className = "";
+                    question_three.className = "";
+                    resulting.className="show_result";}
+                  document.getElementById("clock").innerHTML = min + sec; 
+              },1000);
+}
+
           //first question checking .....
         next.onclick = function() {
             var question_1 = document.getElementsByName("q1_option");
@@ -35,9 +53,9 @@
         // second Question section;
         next3.onclick = function() {
             var question_2 = document.getElementsByName("q2_options");
-            for (var i = 0; i < question_2.length; i++){
-                if (question_2[i].checked){
-                    if(question_2[i].value === "islamabad"){
+            for (var i = 0; i < question_2.length; i++) {
+                if (question_2[i].checked) {
+                    if(question_2[i].value === "islamabad") {
                         corect_ans++;
                         question_two.className = "";
                         question_three.className = "visible3";
@@ -52,11 +70,11 @@
         }
     
         //question three & result  
-        result.onclick = function(){
+        result.onclick = function() {
         var question_3 = document.getElementsByName("q3_options");
-          for (var i = 0; i < question_3.length; i++){
-              if(question_3[i].checked){
-                  if(question_3[i].value === "nawaz sharif"){
+          for (var i = 0; i < question_3.length; i++) {
+              if(question_3[i].checked) {
+                  if(question_3[i].value === "nawaz sharif") {
                       corect_ans++;
                       question_three.className = "";
                       resulting.className = "show_result";
@@ -73,15 +91,18 @@
             var fixed = find_per.toFixed(2);
             var show_the_per = document.getElementById("percent").innerHTML = fixed + "%";
             //genarating remarks ...
-            if (corect_ans === 1){
-                document.getElementById("remarks").innerHTML = "Poor Work please keep try again";
+            var remarks = document.getElementById("remarks");
+           if(corect_ans === 3){
+               remarks.innerHTML = "Exellent!";
+           }
+            if(corect_ans === 2){
+                remarks.innerHTML = "Good!";
             }
-             if (corect_ans === 2){
-                document.getElementById("remarks").innerHTML =  "very Good";
+            if(corect_ans === 1){
+                remarks.innerHTML = "fair but try again !";
             }
-             if (corect_ans === 3){
-                document.getElementById("remarks").innerHTML = "Exelent you are pro!";
+            else{
+                remarks.innerHTML = "Fail!";
             }
         }
             
-                     

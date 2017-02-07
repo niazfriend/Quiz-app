@@ -3,43 +3,54 @@
    
    <head>
        <link rel = "stylesheet" href = "style.css"/>
-      <title>practice session</title>
+       <link rel = "icon" href = ""/>
+      <title>Quiz App</title>
    </head>
    
    <body>
-       <div id = "main_page">
-       <h1 alig= "center">Main QuziApp</h1>
-           <br />
+       <center>
+       <div class = "rotate" align = "center">   <h1 alig= "center">Quix App</h1>
+        <h1 id = "clock" align = "right"></h1>
+           </div>
+    
+           <div id = "main_page">
+    
            <srong align = "center"> this is the simple <em>Quiz App</em> which is making after some intersting fact watch by me!</srong><br />
            <em>Click to start</em><br/>
-           <button id = "start">Start</button>
+           <center><button id = "start">Start</button></center>
        </div>
+           </center>
        <div id = "q1">
        <h1> who is the first prime minister of pakistan ?</h1>
-       <input  type = "radio" value = "liaquat ali khan" name = "q1_option"/>liaquat ali khan<br />
-        <input type = "radio" value = "sikandar mirza"name = "q1_option"/>sikandar mirza <br />
-        <input type = "radio" value = "Quaid e azam"  name = "q1_option"/>Quaid e azam <br />
+       <input  type = "radio" value = "liaquat ali khan" name = "q1_option"/><label for = "q1_option">liaquat ali khan</label><br />
+           <input type = "radio" value = "sikandar mirza"name = "q1_option"/><label for = "q1_option">sikandar mirza</label> <br />
+           <input type = "radio" value = "Quaid e azam"  name = "q1_option"/><label for = "q1_option">Quaid e azam</label> <br />
            <button id = "next">next</button>
            <strong id ="not_checked"></strong>
        </div>
        <div id = "q2">
        <h1> which is the capital of pakistan ?</h1>
-       <input type = "radio" value = "karachi" name = "q2_options"/>karachi<br />
-        <input type = "radio" value = "peshawar" name = "q2_options"/>peshawar<br />
-        <input type = "radio" value = "islamabad" name = "q2_options"/>islamaabd<br />
+           <input type = "radio" value = "karachi" name = "q2_options"/><label for = "q2_option">karachi</label><br />
+           <input type = "radio" value = "peshawar" name = "q2_options"/><label for = "q2_option">peshawar</label><br />
+           <input type = "radio" value = "islamabad" name = "q2_options"/><label for = "q2_option">islamaabd</label><br />
            <button id = "next3">next</button></div>
        <div id = "q3">
        <h1> who is the current prime minister of pakistan?</h1>
-       <input type = "radio" value = "nawaz sharif" name = "q3_options"/>nawaz sharif<br />
-        <input type = "radio" value = "shahbaz sharif" name = "q3_options"/>shahbaz sharif<br />
-        <input type = "radio" value = "mamnoon hussain" name = "q3_options"/>mamnoon huss<br />
+           <input type = "radio" value = "nawaz sharif" name = "q3_options"/><label for = "q3_option">nawaz sharif</label><br />
+           <input type = "radio" value = "shahbaz sharif" name = "q3_options"/><label for = "q3_option">shahbaz sharif</label><br />
+           <input type = "radio" value = "mamnoon hussain" name = "q3_options"/><label for = "q3_option">mamnoon hussain</label><br />
            <button id = "result">result</button></div>
        <div align = "center" id = "progress">
        <h1> Here is Your Progress Result!</h1>
-           <strong id = "cor_ans">Cor AnsWere 3</strong><br />
-           <strong id = "percent">percentage 100%</strong><br/>
-           <strong id = "remarks">Exellent you are pro</strong>
-       </div>
+           <table><tr><th>Here is your correct answere: </th>
+               <td><strong id = "cor_ans">Cor AnsWere 3</strong></td></tr>
+               <tr><th>Here is your percentage:</th><td><strong id = "percent">percentage 100%</strong></td><tr/>
+               <tr><th>Remarks:</th>
+                   <td>
+           <strong id = "remarks"></strong>
+                   </td></tr>
+           </table>
+               </div>
        
       <script type="text/javascript" src = "script.js">
        </script>
